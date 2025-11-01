@@ -51,6 +51,26 @@ class Database extends Config
         ],
     ];
 
+    public array $services = [
+    'DSN'       => '',
+    'hostname'  => 'localhost',
+    'username'  => 'root',
+    'password'  => '', 
+    'database'  => 'services',
+    'DBDriver'  => 'MySQLi',
+    'DBPrefix'  => '',
+    'pConnect'  => false,
+    'DBDebug'   => (ENVIRONMENT !== 'production'),
+    'charset'   => 'utf8mb4',
+    'DBCollat'  => 'utf8mb4_general_ci',
+    'swapPre'   => '',
+    'encrypt'   => false,
+    'compress'  => false,
+    'strictOn'  => false,
+    'failover'  => [],
+    'port'      => 3306,
+];
+
     //    /**
     //     * Sample database connection for SQLite3.
     //     *

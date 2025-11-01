@@ -39,6 +39,7 @@ class AuthController extends BaseController
                 'menu' => $resultado['menu'],
                 'token' => $resultado['token'],
                 'expirationTime' => $resultado['expirationTime'],
+                'serverTime' => time(),
             ]);
         } catch (\Exception $e) {
             return $this->tratarErro($e);
@@ -73,7 +74,8 @@ class AuthController extends BaseController
 
         return $this->response->setJSON([
             'success' => false,
-            'message' => $e->getMessage(),
+            'message' => "Não foi possível conectar ao servidor",
+            // 'message' => $e->getMessage(),
             'error' => ENVIRONMENT === 'development' ? $e->getTraceAsString() : null,
         ])->setStatusCode($status);
     }

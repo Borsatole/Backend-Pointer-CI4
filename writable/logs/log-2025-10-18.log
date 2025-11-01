@@ -1,0 +1,180 @@
+ERROR - 2025-10-18 16:28:22 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gestorv2', 3306, '', 0)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('teste2@email.co...', '123456')
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('teste2@email.co...', '123456')
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#14 {main}
+ERROR - 2025-10-18 16:40:03 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gestorv2', 3306, '', 0)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#14 {main}
+ERROR - 2025-10-18 16:47:22 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gestorv2', 3306, '', 0)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#14 {main}
+ERROR - 2025-10-18 16:48:16 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gestorv2', 3306, '', 0)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#14 {main}
+ERROR - 2025-10-18 16:48:32 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'gestorv2', 3306, '', 0)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#5 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Services\AuthService.php(34): CodeIgniter\BaseModel->first()
+#6 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\app\Controllers\AuthController.php(33): App\Services\AuthService->autenticar('borsatole@gmail...', 'Kodaline182488')
+#7 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\AuthController->login()
+#8 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#9 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\HomeUser\Desktop\DEVELOPER\GestorV2\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
+#14 {main}

@@ -9,6 +9,9 @@ use App\Exceptions\NivelException;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
+
+
+
 class AuthService
 {
     protected Usuario $usuarios;
@@ -20,6 +23,7 @@ class AuthService
         $this->usuarios = new Usuario();
         $this->niveis = new NiveisModel();
         $this->db = \Config\Database::connect();
+        helper('email');
     }
 
     /**
@@ -54,6 +58,36 @@ class AuthService
         $menu = $this->buscaMenu($usuario);
         $expirationTime = $payload['exp'];
 
+        enviarEmailSimples(
+            // para
+            'vitoriabotacini7@gmail.com',
+
+            // assunto
+            '🎉 O soca é do paaaai',
+
+            // mensagem
+            "Olá Selma Piruleibe, Só pra falar que o xoca é do pai"
+        );
+
+
+        // $sucesso = enviarEmailTemplate(
+        //     // template
+        //     'boas_vindas',
+
+        //     // variaveis
+        //     ['nome' => 'Selma Piruleibe', 'codigo' => '123456'],
+
+        //     // para
+        //     // $usuario['email'], 
+        //     'vitoriabotacini7@gmail.com',
+
+        //     // assunto
+        //     '🎉 Bem-vindo à PlayNet!');
+
+
+
+
+
         return [
             'usuario' => $usuario,
             'menu' => $menu,
@@ -73,7 +107,7 @@ class AuthService
             'iss' => base_url(),
             'iat' => time(),
             'exp' => time() + 3600,
-            // 'exp' => time() + 10,
+            // 'exp' => time() + 30,
             'sub' => $usuario['id'],
             'nivel' => $usuario['nivel']
         ];
@@ -96,7 +130,7 @@ class AuthService
         $secret = env('JWT_SECRET');
 
         try {
-            
+
             $decoded = JWT::decode($token, new Key($secret, 'HS256'));
             return (array) $decoded;
 
@@ -134,4 +168,9 @@ class AuthService
         $menusConfig = include(APPPATH . 'Config/Menus.php');
         return $menusConfig[$usuario['nivel']] ?? $menusConfig[2];
     }
+
+
+
+
+
 }
