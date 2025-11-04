@@ -48,6 +48,40 @@ $routes->group('usuarios', ['filter' => 'autenticacao'], function ($routes) {
 
 });
 
+// Rotas de Clientes
+$routes->group('clientes', ['filter' => 'autenticacao'], function ($routes) {
+    $routes->get(
+        '',
+        'ClienteController::index',
+        ['filter' => 'permission:cliente.visualizar']
+    );
+
+    $routes->post(
+        '',
+        'ClienteController::create',
+        ['filter' => 'permission:cliente.criar']
+    );
+
+    $routes->get(
+        '(:num)',
+        'ClienteController::show/$1',
+        ['filter' => 'permission:cliente.visualizar']
+    );
+
+    $routes->put(
+        '(:num)',
+        'ClienteController::update/$1',
+        ['filter' => 'permission:cliente.editar']
+    );
+
+    $routes->delete(
+        '(:num)',
+        'ClienteController::delete/$1',
+        ['filter' => 'permission:cliente.excluir']
+    );
+
+});
+
 // Rotas de Niveis
 $routes->group('papeis', ['filter' => 'autenticacao'], function ($routes) {
     $routes->get(

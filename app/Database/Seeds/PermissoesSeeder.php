@@ -34,6 +34,57 @@ class PermissoesSeeder extends Seeder
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
+            // Papeis
+            [
+                'slug' => 'papeis.criar',
+                'descricao' => 'Permite criar novos papeis.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'slug' => 'papeis.visualizar',
+                'descricao' => 'Permite visualizar a lista de papeis.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'slug' => 'papeis.editar',
+                'descricao' => 'Permite editar informações de papeis.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'slug' => 'papeis.excluir',
+                'descricao' => 'Permite excluir papeis.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+
+            // Clientes
+            [
+                'slug' => 'cliente.criar',
+                'descricao' => 'Permite criar novos clientes.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'slug' => 'cliente.visualizar',
+                'descricao' => 'Permite visualizar a lista de clientes.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'slug' => 'cliente.editar',
+                'descricao' => 'Permite editar informações de clientes.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
+            [
+                'slug' => 'cliente.excluir',
+                'descricao' => 'Permite excluir clientes.',
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
 
             // Veículos
             [

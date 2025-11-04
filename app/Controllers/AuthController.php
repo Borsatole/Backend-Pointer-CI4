@@ -46,10 +46,10 @@ class AuthController extends BaseController
         }
     }
 
-  
+
     public function validarToken(): ResponseInterface
     {
-        
+
         try {
             $authHeader = service('request')->getHeaderLine('Authorization');
             $dadosToken = $this->AuthService->validarToken($authHeader);
@@ -75,7 +75,7 @@ class AuthController extends BaseController
         return $this->response->setJSON([
             'success' => false,
             'message' => "Não foi possível conectar ao servidor",
-            // 'message' => $e->getMessage(),
+            'messagedetail' => $e->getMessage(),
             'error' => ENVIRONMENT === 'development' ? $e->getTraceAsString() : null,
         ])->setStatusCode($status);
     }

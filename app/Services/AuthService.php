@@ -37,9 +37,9 @@ class AuthService
             throw AuthException::naoExiste();
         }
 
-        if (!$usuario['ativo']) {
-            throw AuthException::naoAtivo();
-        }
+        // if (!$usuario['ativo']) {
+        //     throw AuthException::naoAtivo();
+        // }
 
         if (!$this->validarSenha($senha, $usuario['senha'])) {
             throw AuthException::senhaIncorreta();
@@ -55,7 +55,7 @@ class AuthService
 
         $payload = $this->criarPayloadJWT($usuario);
         $token = $this->gerarJWT($payload);
-        $menu = $this->buscaMenu($usuario);
+        $menu = $usuario['ativo'] ? $this->buscaMenu($usuario) : [];
         $expirationTime = $payload['exp'];
 
         enviarEmailSimples(

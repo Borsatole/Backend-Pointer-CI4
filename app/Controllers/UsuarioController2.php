@@ -22,23 +22,22 @@ class UsuarioController2 extends BaseController
         $usuarioLogado = $this->request->user ?? null;
 
 
-            $limite = intval($this->request->getVar('limite') ?? 10);
-            $pagina = intval($this->request->getVar('pagina') ?? 1);
+        $limite = intval($this->request->getVar('limite') ?? 10);
+        $pagina = intval($this->request->getVar('pagina') ?? 1);
 
 
 
-            // Pega todos os filtros da URL (exceto limite/pagina)
-            $filtros = $this->request->getGet(); 
-            unset($filtros['limite'], $filtros['pagina']);
+        // Pega todos os filtros da URL (exceto limite/pagina)
+        $filtros = $this->request->getGet();
+        unset($filtros['limite'], $filtros['pagina']);
 
 
 
-        try{
+        try {
             $resultado = $this->UsuarioService->listar($limite, $pagina, $filtros);
             return $this->response->setJSON([
                 'success' => true,
-                'Registros' => $resultado['registros'],
-                'paginacao' => $resultado['paginacao'],
+                ...$resultado,
                 'filtros' => $filtros
             ]);
 
@@ -48,6 +47,6 @@ class UsuarioController2 extends BaseController
                 'message' => $e->getMessage(),
             ])->setStatusCode($e->getCode());
         }
-        
+
     }
 }

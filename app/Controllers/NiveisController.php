@@ -24,14 +24,14 @@ class NiveisController extends BaseController
             $pagina = intval($this->request->getVar('pagina') ?? 1);
 
             // Pega todos os filtros da URL (exceto limite/pagina)
-            $filtros = $this->request->getGet(); 
+            $filtros = $this->request->getGet();
             unset($filtros['limite'], $filtros['pagina']);
 
             $resultado = $this->nivelService->listar($limite, $pagina, $filtros);
 
             return $this->response->setJSON([
                 'success' => true,
-                'Registros' => $resultado['registros'],
+                'registros' => $resultado['registros'],
                 'paginacao' => $resultado['paginacao'],
                 'filtros' => $filtros
             ]);
@@ -103,7 +103,7 @@ class NiveisController extends BaseController
     {
         try {
             $data = $this->request->getJSON(true);
-            
+
             // Se as permissões vieram como string JSON, decodifica
             if (isset($data['permissoes']) && is_string($data['permissoes'])) {
                 $data['permissoes'] = json_decode($data['permissoes'], true);

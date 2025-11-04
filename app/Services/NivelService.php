@@ -25,7 +25,7 @@ class NivelService
     /**
      * Lista todos os níveis com paginação e permissões
      */
-    public function listar(int $limite = 10, int $pagina = 1): array
+    public function listar(int $limite = 10, int $pagina = 1, array $filtros = []): array
     {
         $niveis = $this->niveisModel->listarComPaginacao($limite, $pagina);
         $pager = $this->niveisModel->pager;

@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Traits\PaginacaoTrait;
 
 class NiveisModel extends Model
 {
+
+
     protected $table = 'niveis';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
@@ -24,7 +27,7 @@ class NiveisModel extends Model
     protected $validationRules = [
         'nome' => 'required|min_length[3]|max_length[100]',
     ];
-    
+
     protected $validationMessages = [
         'nome' => [
             'required' => 'O campo nome é obrigatório',
@@ -32,7 +35,7 @@ class NiveisModel extends Model
             'max_length' => 'O nome deve ter no máximo 100 caracteres',
         ]
     ];
-    
+
     protected $skipValidation = false;
     protected $allowCallbacks = true;
 
@@ -50,11 +53,11 @@ class NiveisModel extends Model
     public function buscarPorNome(string $nome, ?int $idExcluir = null): ?array
     {
         $builder = $this->where('nome', $nome);
-        
+
         if ($idExcluir !== null) {
             $builder->where('id !=', $idExcluir);
         }
-        
+
         return $builder->first();
     }
 
