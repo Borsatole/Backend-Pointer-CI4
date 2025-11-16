@@ -60,4 +60,10 @@ class ItensLocacoesModel extends Model
     protected $afterFind = [];
     protected $beforeDelete = [];
     protected $afterDelete = [];
+
+
+    public function mudarStatusItem(int $id, string $status): bool
+    {
+        return $this->update($id, ['status' => $status]);
+    }
 }

@@ -3,43 +3,37 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use CodeIgniter\HTTP\ResponseInterface;
-use App\Services\EnderecoService;
-use App\Exceptions\EnderecoException;
-
-
+use App\Traits\RequestFilterTrait;
 
 class EnderecosController extends BaseController
 {
-    private $enderecoService;
+    use RequestFilterTrait;
+
+    /** 🔹 Nome da classe do Service (pode ser trocado) */
+    private const SERVICE = \App\Services\EnderecoService::class;
+
+    private $service;
 
     public function __construct()
     {
-        $this->enderecoService = new EnderecoService();
+        $serviceClass = self::SERVICE;
+        $this->service = new $serviceClass();
     }
 
     public function index()
     {
-        //
-    }
-
-    public function create()
-    {
         try {
-            $data = $this->request->getJSON(true);
-            $endereco = $this->enderecoService->criar($data);
+            $params = $this->getRequestFilters($this->request, [
+                'pagination' => true
+            ]);
+
+            $resultado = $this->service->listar($params);
 
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Endereço criado com sucesso',
-                'registro' => $endereco
-            ])->setStatusCode(201);
-
-        } catch (EnderecoException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
+                ...$resultado,
+                'filtros' => $params['filtros'],
+            ]);
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
@@ -49,18 +43,29 @@ class EnderecosController extends BaseController
     public function show($id = null)
     {
         try {
-            $endereco = $this->enderecoService->buscar((int) $id);
+            $registro = $this->service->buscar((int) $id);
 
             return $this->response->setJSON([
                 'success' => true,
-                'Registros' => $endereco
+                'registro' => $registro
             ]);
 
-        } catch (EnderecoException $e) {
+        } catch (\Exception $e) {
+            return $this->tratarErro($e);
+        }
+    }
+
+    public function create()
+    {
+        try {
+            $data = $this->request->getJSON(true);
+            $registro = $this->service->criar($data);
+
             return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
+                'success' => true,
+                'message' => 'Criado com sucesso',
+                'registro' => $registro
+            ])->setStatusCode(201);
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
@@ -71,50 +76,37 @@ class EnderecosController extends BaseController
     {
         try {
             $data = $this->request->getJSON(true);
-            $endereco = $this->enderecoService->atualizar((int) $id, $data);
-
+            $registro = $this->service->atualizar((int) $id, $data);
 
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Endereço atualizado com sucesso',
-                'registro' => $endereco
+                'message' => 'Atualizado com sucesso',
+                'registro' => $registro
             ]);
-
-        } catch (EnderecoException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
         }
     }
-
 
     public function delete($id = null)
     {
         try {
-            $this->enderecoService->deletar((int) $id);
+            $this->service->deletar((int) $id);
 
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Endereço deletado com sucesso'
+                'message' => 'Deletado com sucesso'
             ]);
-
-        } catch (EnderecoException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
         }
     }
+
     private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
     {
-        log_message('error', '[EnderecosController] ' . $e->getMessage());
+        log_message('error', '[Controller Generico] ' . $e->getMessage());
 
         return $this->response->setJSON([
             'success' => false,

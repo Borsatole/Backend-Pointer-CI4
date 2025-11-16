@@ -3,169 +3,111 @@
 namespace App\Services;
 
 use App\Models\EnderecosModel;
-use App\Exceptions\EnderecoException;
+use App\Exceptions\MessagesException;
+use Config\Database;
+
+
 
 class EnderecoService
 {
-    private $enderecosModel;
+
+
+    /** 🔹 Nome do Model usado pelo Service */
+    private const MODEL = EnderecosModel::class;
+
+    /** @var EnderecosModel */
+    private $model;
+
     private $db;
 
     public function __construct()
     {
-        $this->enderecosModel = new EnderecosModel();
+        $modelClass = self::MODEL;
+        $this->model = new $modelClass();
 
-        $this->db = \Config\Database::connect();
+        $this->db = Database::connect();
     }
 
-
-    public function listar(int $limite = 10, int $pagina = 1, array $filtros = [], ?string $data_inicio = null, ?string $data_fim = null): array
+    public function listar(array $params): array
     {
-        // Obtém os registros paginados (enderecos)
-        $registros = $this->enderecosModel->listarComPaginacao($limite, $pagina, $filtros, $data_inicio, $data_fim);
-
-        // Verifica se o resultado contém a chave 'registros' (caso seu método retorne com paginação)
-        if (isset($registros['registros']) && is_array($registros['registros'])) {
-            foreach ($registros['registros'] as &$cliente) {
-                // Busca os endereços desse cliente
-                $enderecos = $this->enderecosModel->buscarPorCliente($cliente['id']);
-                // Adiciona o campo no cliente
-                $cliente['enderecos'] = $enderecos ?? [];
-            }
-        }
-
-        return $registros;
+        return isset($params['pagina'], $params['limite'])
+            ? $this->model->listarComPaginacao($params)
+            : $this->model->listarSemPaginacao($params);
     }
+
 
     public function buscar(int $id): array
     {
-        $registro = $this->enderecosModel->buscarPorId($id);
-        $enderecos = $this->enderecosModel->buscarPorCliente($id);
-        $registro['enderecos'] = $enderecos ?? [];
-        
+        $registro = $this->model->buscarPorId($id);
+
         if (!$registro) {
-            throw EnderecoException::naoEncontrado();
+            throw MessagesException::naoEncontrado($id);
         }
 
         return $registro;
     }
 
+
     public function criar(array $dados): array
     {
-        // 1️⃣ Validação de negócio
-        if (empty($dados['cliente_id'])) {
-            throw EnderecoException::idClienteObrigatorio();    
+        $this->validarCampoObrigatorio($dados, 'locacao_item_id');
+
+        $permitidos = $this->model->allowedFields;
+        $dadosCriar = $this->filtrarCamposPermitidos($dados, $permitidos);
+
+        if (empty($dadosCriar)) {
+            throw MessagesException::erroCriar(['Nenhum campo válido foi enviado.']);
         }
 
-        // 3️⃣ Inicia transação (garante atomicidade)
-        $this->db->transStart();
-
-        try {
-            $dadosEndereco = [
-                'cliente_id' => $dados['cliente_id'] ?? null,
-                'cep' => $dados['cep'] ?? null,
-                'logradouro' => $dados['logradouro'] ?? null,
-                'complemento' => $dados['complemento'] ?? null,
-                'bairro' => $dados['bairro'] ?? null,
-                'numero' => $dados['numero'] ?? null,
-                'cidade' => $dados['cidade'] ?? null,
-                'estado' => $dados['estado'] ?? null,
-                
-            ];
-
-            $id = $this->enderecosModel->criar($dadosEndereco);
-
-            if (!$id) {
-                throw EnderecoException::erroCriar($this->enderecosModel->errors());
-            }
-
-            $this->db->transComplete();
-
-            if ($this->db->transStatus() === false) {
-                throw EnderecoException::erroCriar();
-            }
-
-            return $this->buscar($id);
-
-        } catch (\Exception $e) {
-            $this->db->transRollback();
-            throw $e;
+        if (!$this->model->criar($dadosCriar)) {
+            throw MessagesException::erroCriar($this->model->errors());
         }
+
+        $id = $this->model->getInsertID();
+        return $this->buscar($id);
     }
 
     public function atualizar(int $id, array $dados): array
     {
-       
-        // 2️⃣ Verifica se existe
-        $enderecoExistente = $this->enderecosModel->buscarPorId($id);
-        if (!$enderecoExistente) {
-            throw EnderecoException::naoEncontrado();   
+        $registro = $this->model->buscarPorId($id)
+            ?? throw MessagesException::naoEncontrado($id);
+
+        $permitidos = $this->model->allowedFields;
+        $dadosAtualizar = $this->filtrarCamposPermitidos($dados, $permitidos);
+
+        if (empty($dadosAtualizar)) {
+            throw MessagesException::erroAtualizar(['Nenhum campo válido foi enviado.']);
         }
 
-        // 4️⃣ Inicia transação
-        $this->db->transStart();
-
-        try {
-            $dadosEndereco = [
-                'cep' => $dados['cep'] ?? null,
-                'logradouro' => $dados['logradouro'] ?? null,
-                'complemento' => $dados['complemento'] ?? null,
-                'bairro' => $dados['bairro'] ?? null,
-                'numero' => $dados['numero'] ?? null,
-                'cidade' => $dados['cidade'] ?? null,
-                'estado' => $dados['estado'] ?? null,
-                
-            ];
-
-            if (!$this->enderecosModel->atualizar($id, $dadosEndereco)) {
-                throw EnderecoException::erroAtualizar($this->enderecosModel->errors());
-            }
-
-        
-            $this->db->transComplete();
-
-            if ($this->db->transStatus() === false) {
-                throw EnderecoException::erroAtualizar();
-            }
-
-            return $this->buscar($id);
-
-        } catch (\Exception $e) {
-            $this->db->transRollback();
-            throw $e;
+        if (!$this->model->atualizar($id, $dadosAtualizar)) {
+            throw MessagesException::erroAtualizar($this->model->errors());
         }
+
+        return $this->buscar($id);
     }
 
     public function deletar(int $id): bool
     {
-        // 1️⃣ Verifica se existe
-        if (!$this->enderecosModel->buscarPorId($id)) {
-            throw EnderecoException::naoEncontrado();
+        $this->model->buscarPorId($id)
+            ?? throw MessagesException::naoEncontrado($id);
+
+        if (!$this->model->deletar($id)) {
+            throw MessagesException::erroDeletar();
         }
 
-        // 2️⃣ Inicia transação
-        $this->db->transStart();
+        return true;
+    }
 
-        try {
-           
-
-            // 4️⃣ Remove o nível
-            if (!$this->enderecosModel->deletar($id)) {
-                throw EnderecoException::erroDeletar();
-            }
-
-            $this->db->transComplete();
-
-            if ($this->db->transStatus() === false) {
-                throw EnderecoException::erroDeletar();  
-            }
-
-            return true;
-
-        } catch (\Exception $e) {
-            $this->db->transRollback();
-            throw $e;
+    private function validarCampoObrigatorio(array $dados, string $campo): void
+    {
+        if (empty($dados[$campo])) {
+            throw MessagesException::campoObrigatorio($campo);
         }
     }
 
-   
+    private function filtrarCamposPermitidos(array $dados, array $permitidos): array
+    {
+        return array_intersect_key($dados, array_flip($permitidos));
+    }
 }
+

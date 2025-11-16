@@ -3,38 +3,35 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
-use CodeIgniter\HTTP\ResponseInterface;
-use App\Services\LocacoesService;
-use App\Exceptions\LocacoesException;
 use App\Traits\RequestFilterTrait;
 
 class LocacoesController extends BaseController
 {
     use RequestFilterTrait;
-    private $LocacoesService;
+
+    /** 🔹 Nome da classe do Service (pode ser trocado) */
+    private const SERVICE = \App\Services\LocacoesService::class;
+
+    private $service;
+
     public function __construct()
     {
-        $this->LocacoesService = new LocacoesService();
+        $serviceClass = self::SERVICE;
+        $this->service = new $serviceClass();
     }
 
     public function index()
     {
         try {
-
-            // Aqui pego os parametros da url e no optional passo os filtros ativos
             $params = $this->getRequestFilters($this->request, [
                 'pagination' => true
             ]);
 
-
-
-            $resultado = $this->LocacoesService->listar($params);
+            $resultado = $this->service->listar($params);
 
             return $this->response->setJSON([
                 'success' => true,
                 ...$resultado,
-                // 'registros' => $resultado['registros'],
-                // 'paginacao' => $resultado['paginacao'],
                 'filtros' => $params['filtros'],
             ]);
 
@@ -46,18 +43,12 @@ class LocacoesController extends BaseController
     public function show($id = null)
     {
         try {
-            $itemLocacao = $this->LocacoesService->buscar((int) $id);
+            $registro = $this->service->buscar((int) $id);
 
             return $this->response->setJSON([
                 'success' => true,
-                'Registros' => $itemLocacao
+                'registro' => $registro
             ]);
-
-        } catch (LocacoesException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
@@ -68,19 +59,13 @@ class LocacoesController extends BaseController
     {
         try {
             $data = $this->request->getJSON(true);
-            $itemLocacao = $this->LocacoesService->criar($data);
+            $registro = $this->service->criar($data);
 
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Item Locação criado com sucesso',
-                'registro' => $itemLocacao
+                'message' => 'Criado com sucesso',
+                'registro' => $registro
             ])->setStatusCode(201);
-
-        } catch (LocacoesException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
@@ -91,20 +76,13 @@ class LocacoesController extends BaseController
     {
         try {
             $data = $this->request->getJSON(true);
-
-            $itemLocacao = $this->LocacoesService->atualizar((int) $id, $data);
+            $registro = $this->service->atualizar((int) $id, $data);
 
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Item Locação atualizado com sucesso',
-                'registro' => $itemLocacao
+                'message' => 'Atualizado com sucesso',
+                'registro' => $registro
             ]);
-
-        } catch (LocacoesException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
@@ -114,26 +92,21 @@ class LocacoesController extends BaseController
     public function delete($id = null)
     {
         try {
-            $this->LocacoesService->deletar((int) $id);
+            $this->service->deletar((int) $id);
 
             return $this->response->setJSON([
                 'success' => true,
-                'message' => 'Item Locação deletado com sucesso'
+                'message' => 'Deletado com sucesso'
             ]);
-
-        } catch (LocacoesException $e) {
-            return $this->response->setJSON([
-                'success' => false,
-                'message' => $e->getMessage()
-            ])->setStatusCode($e->getCode());
 
         } catch (\Exception $e) {
             return $this->tratarErro($e);
         }
     }
+
     private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
     {
-        log_message('error', '[ClientesController] ' . $e->getMessage());
+        log_message('error', '[Controller Generico] ' . $e->getMessage());
 
         return $this->response->setJSON([
             'success' => false,

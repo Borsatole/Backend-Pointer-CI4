@@ -54,7 +54,9 @@ class LocacoesModel extends Model
         'endereco_id' => 'required|is_natural_no_zero',
         'forma_pagamento' => 'in_list[debito,credito,dinheiro]',
     ];
-    protected $validationMessages = [];
+    protected $validationMessages = [
+        'forma_pagamento' => '{field} deve ser um dos seguintes: debito,credito,dinheiro',
+    ];
     protected $skipValidation = false;
     protected $cleanValidationRules = true;
 

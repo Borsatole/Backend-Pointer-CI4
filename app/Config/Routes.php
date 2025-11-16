@@ -18,31 +18,31 @@ $routes->group('login', function ($routes) {
 $routes->group('usuarios', ['filter' => 'autenticacao'], function ($routes) {
     $routes->get(
         '',
-        'UsuarioController2::index',
+        'UsuarioController::index',
         ['filter' => 'permission:usuario.visualizar']
     );
 
     $routes->post(
         '',
-        'UsuarioController2::create',
+        'UsuarioController::create',
         ['filter' => 'permission:usuario.criar']
     );
 
     $routes->get(
         '(:num)',
-        'UsuarioController2::show/$1',
+        'UsuarioController::show/$1',
         ['filter' => 'permission:usuario.visualizar']
     );
 
     $routes->post(
         '(:num)',
-        'UsuarioController2::update/$1',
+        'UsuarioController::update/$1',
         ['filter' => 'permission:usuario.editar']
     );
 
     $routes->delete(
         '(:num)',
-        'UsuarioController2::delete/$1',
+        'UsuarioController::delete/$1',
         ['filter' => 'permission:usuario.excluir']
     );
 
