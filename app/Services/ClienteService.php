@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\ClienteModel;
 use App\Exceptions\MessagesException;
+use App\Models\EnderecosModel;
 use Config\Database;
 
 
@@ -13,26 +14,30 @@ class ClienteService
 
 
     /** 🔹 Nome do Model usado pelo Service */
-    private const MODEL = ClienteModel::class;
+    private ClienteModel $model;
 
-    /** @var ClienteModel */
-    private $model;
-
+    private EnderecosModel $enderecosModel;
     private $db;
 
     public function __construct()
     {
-        $modelClass = self::MODEL;
-        $this->model = new $modelClass();
-
+        $this->model = new ClienteModel();
+        $this->enderecosModel = new EnderecosModel();
         $this->db = Database::connect();
     }
 
     public function listar(array $params): array
     {
-        return isset($params['pagina'], $params['limite'])
+        $registro = isset($params['pagina'], $params['limite'])
             ? $this->model->listarComPaginacao($params)
             : $this->model->listarSemPaginacao($params);
+
+        foreach ($registro['registros'] as $i => $cliente) {
+            $registro['registros'][$i]['enderecos'] =
+                $this->enderecosModel->buscarPorCliente($cliente['id']) ?? [];
+        }
+
+        return $registro;
     }
 
 

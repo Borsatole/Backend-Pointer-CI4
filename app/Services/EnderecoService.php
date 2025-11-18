@@ -50,7 +50,7 @@ class EnderecoService
 
     public function criar(array $dados): array
     {
-        $this->validarCampoObrigatorio($dados, 'locacao_item_id');
+        $this->validarCampoObrigatorio($dados, 'logradouro');
 
         $permitidos = $this->model->allowedFields;
         $dadosCriar = $this->filtrarCamposPermitidos($dados, $permitidos);

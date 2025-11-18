@@ -22,6 +22,7 @@ class LocacoesModel extends Model
         'endereco_id',
         'data_inicio',
         'data_fim',
+        'data_retirada',
         'preco_total',
         'forma_pagamento',
         'observacoes',
