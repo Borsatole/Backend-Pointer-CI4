@@ -4,10 +4,13 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Traits\RequestFilterTrait;
+use App\Traits\TratarErroTrait;
+
 
 class UsuarioController extends BaseController
 {
     use RequestFilterTrait;
+    use TratarErroTrait;
 
     /** 🔹 Nome da classe do Service (pode ser trocado) */
     private const SERVICE = \App\Services\UsuarioService::class;
@@ -104,14 +107,14 @@ class UsuarioController extends BaseController
         }
     }
 
-    private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
-    {
-        log_message('error', '[Controller Generico] ' . $e->getMessage());
+    // private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
+    // {
+    //     log_message('error', '[Controller Generico] ' . $e->getMessage());
 
-        return $this->response->setJSON([
-            'success' => false,
-            'message' => 'Erro interno do servidor',
-            'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
-        ])->setStatusCode(500);
-    }
+    //     return $this->response->setJSON([
+    //         'success' => false,
+    //         'message' => 'Erro interno do servidor',
+    //         'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
+    //     ])->setStatusCode(500);
+    // }
 }

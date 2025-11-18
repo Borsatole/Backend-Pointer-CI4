@@ -82,5 +82,13 @@ class LocacoesModel extends Model
             ->first();
     }
 
+    public function verificaSeJaEstaLocado(int $itemId): ?array
+    {
+        return $this->select('locacoes.*')
+            ->where('locacoes.locacao_item_id', $itemId)
+            ->where('locacoes.status', 'ativo')
+            ->first();
+    }
+
 
 }

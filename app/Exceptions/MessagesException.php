@@ -6,6 +6,10 @@ use Exception;
 
 class MessagesException extends Exception
 {
+    public static function erroGenerico($mensagem): self
+    {
+        return new self($mensagem, 400);
+    }
     public static function naoEncontrado($nome): self
     {
         return new self("Registro {$nome} não encontrado", 404);

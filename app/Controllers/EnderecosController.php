@@ -4,9 +4,11 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Traits\RequestFilterTrait;
+use App\Traits\TratarErroTrait;
 
 class EnderecosController extends BaseController
 {
+    use TratarErroTrait;
     use RequestFilterTrait;
 
     /** 🔹 Nome da classe do Service (pode ser trocado) */
@@ -104,14 +106,14 @@ class EnderecosController extends BaseController
         }
     }
 
-    private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
-    {
-        log_message('error', '[Controller Generico] ' . $e->getMessage());
+    // private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
+    // {
+    //     log_message('error', '[Controller Generico] ' . $e->getMessage());
 
-        return $this->response->setJSON([
-            'success' => false,
-            'message' => 'Erro interno do servidor',
-            'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
-        ])->setStatusCode(500);
-    }
+    //     return $this->response->setJSON([
+    //         'success' => false,
+    //         'message' => 'Erro interno do servidor',
+    //         'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
+    //     ])->setStatusCode(500);
+    // }
 }

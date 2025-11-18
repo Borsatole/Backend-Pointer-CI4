@@ -53,6 +53,11 @@ class LocacoesService
         }
 
         $locacao_item_id = $dadosCriar['locacao_item_id'];
+
+        if ($this->model->verificaSeJaEstaLocado($locacao_item_id)) {
+            throw MessagesException::erroGenerico('Item já está locado.');
+        }
+
         $this->itemModel->mudarStatusItem($locacao_item_id, 'locado');
 
         if (!$this->model->criar($dadosCriar)) {

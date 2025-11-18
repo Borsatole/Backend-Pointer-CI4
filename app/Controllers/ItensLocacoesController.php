@@ -6,9 +6,12 @@ use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Services\ItensLocacoesService;
 use App\Exceptions\ItensLocacoesException;
+use App\Traits\TratarErroTrait;
+
 
 class ItensLocacoesController extends BaseController
 {
+    use TratarErroTrait;
     private $itensLocacoesService;
     public function __construct()
     {
@@ -149,14 +152,14 @@ class ItensLocacoesController extends BaseController
             return $this->tratarErro($e);
         }
     }
-    private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
-    {
-        log_message('error', '[ClientesController] ' . $e->getMessage());
+    // private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
+    // {
+    //     log_message('error', '[ClientesController] ' . $e->getMessage());
 
-        return $this->response->setJSON([
-            'success' => false,
-            'message' => 'Erro interno do servidor',
-            'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
-        ])->setStatusCode(500);
-    }
+    //     return $this->response->setJSON([
+    //         'success' => false,
+    //         'message' => 'Erro interno do servidor',
+    //         'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
+    //     ])->setStatusCode(500);
+    // }
 }

@@ -5,9 +5,12 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Services\NivelService;
 use App\Exceptions\NivelException;
+use App\Traits\TratarErroTrait;
+
 
 class NiveisController extends BaseController
 {
+    use TratarErroTrait;
     private $nivelService;
 
     public function __construct()
@@ -156,14 +159,14 @@ class NiveisController extends BaseController
     /**
      * Tratamento genérico de erros
      */
-    private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
-    {
-        log_message('error', '[NiveisController] ' . $e->getMessage());
+    // private function tratarErro(\Exception $e): \CodeIgniter\HTTP\Response
+    // {
+    //     log_message('error', '[NiveisController] ' . $e->getMessage());
 
-        return $this->response->setJSON([
-            'success' => false,
-            'message' => 'Erro interno do servidor',
-            'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
-        ])->setStatusCode(500);
-    }
+    //     return $this->response->setJSON([
+    //         'success' => false,
+    //         'message' => 'Erro interno do servidor',
+    //         'error' => ENVIRONMENT === 'development' ? $e->getMessage() : null
+    //     ])->setStatusCode(500);
+    // }
 }

@@ -66,4 +66,5 @@ class ItensLocacoesModel extends Model
     {
         return $this->update($id, ['status' => $status]);
     }
+
 }

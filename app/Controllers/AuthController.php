@@ -7,8 +7,11 @@ use App\Services\AuthService;
 use App\Exceptions\AuthException;
 use CodeIgniter\HTTP\ResponseInterface;
 
+use App\Traits\TratarErroTrait;
+
 class AuthController extends BaseController
 {
+    use TratarErroTrait;
     protected AuthService $AuthService;
 
     public function __construct()
@@ -64,19 +67,19 @@ class AuthController extends BaseController
         }
     }
 
-    private function tratarErro(\Exception $e): ResponseInterface
-    {
-        $status = ($e->getCode() >= 100 && $e->getCode() < 600)
-            ? $e->getCode()
-            : 500;
+    // private function tratarErro(\Exception $e): ResponseInterface
+    // {
+    //     $status = ($e->getCode() >= 100 && $e->getCode() < 600)
+    //         ? $e->getCode()
+    //         : 500;
 
-        // log_message('error', "[AuthController] {$e->getMessage()}");
+    //     // log_message('error', "[AuthController] {$e->getMessage()}");
 
-        return $this->response->setJSON([
-            'success' => false,
-            'message' => "Não foi possível conectar ao servidor",
-            'messagedetail' => $e->getMessage(),
-            'error' => ENVIRONMENT === 'development' ? $e->getTraceAsString() : null,
-        ])->setStatusCode($status);
-    }
+    //     return $this->response->setJSON([
+    //         'success' => false,
+    //         'message' => "Não foi possível conectar ao servidor",
+    //         'messagedetail' => $e->getMessage(),
+    //         'error' => ENVIRONMENT === 'development' ? $e->getTraceAsString() : null,
+    //     ])->setStatusCode($status);
+    // }
 }
