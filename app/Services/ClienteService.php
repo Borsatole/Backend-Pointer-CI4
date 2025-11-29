@@ -60,15 +60,34 @@ class ClienteService
         $permitidos = $this->model->allowedFields;
         $dadosCriar = $this->filtrarCamposPermitidos($dados, $permitidos);
 
+        $enderecos = $dados['enderecos'] ?? [];
+
+
         if (empty($dadosCriar)) {
             throw MessagesException::erroCriar(['Nenhum campo válido foi enviado.']);
         }
+
+        $this->db->transBegin();
 
         if (!$this->model->criar($dadosCriar)) {
             throw MessagesException::erroCriar($this->model->errors());
         }
 
         $id = $this->model->getInsertID();
+
+        foreach ($enderecos as $endereco) {
+            $endereco['cliente_id'] = $id;
+            $this->enderecosModel->criar($endereco);
+        }
+
+        if ($this->db->transStatus() === false) {
+            $this->db->transRollback();
+            throw new MessagesException('Erro na transação.');
+        }
+
+        $this->db->transCommit();
+
+
         return $this->buscar($id);
     }
 

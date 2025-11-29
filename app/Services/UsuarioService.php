@@ -13,18 +13,13 @@ class UsuarioService
 
 
     /** 🔹 Nome do Model usado pelo Service */
-    private const MODEL = Usuario::class;
-
-    /** @var Usuario */
-    private $model;
+    private Usuario $model;
 
     private $db;
 
     public function __construct()
     {
-        $modelClass = self::MODEL;
-        $this->model = new $modelClass();
-
+        $this->model = new Usuario();
         $this->db = Database::connect();
     }
 
@@ -50,10 +45,12 @@ class UsuarioService
 
     public function criar(array $dados): array
     {
-        $this->validarCampoObrigatorio($dados, 'locacao_item_id');
+        $this->validarCampoObrigatorio($dados, 'email');
 
         $permitidos = $this->model->allowedFields;
         $dadosCriar = $this->filtrarCamposPermitidos($dados, $permitidos);
+
+        $dadosCriar['senha'] = $this->model->transformarEmHash($dadosCriar['senha']);
 
         if (empty($dadosCriar)) {
             throw MessagesException::erroCriar(['Nenhum campo válido foi enviado.']);
@@ -74,6 +71,10 @@ class UsuarioService
 
         $permitidos = $this->model->allowedFields;
         $dadosAtualizar = $this->filtrarCamposPermitidos($dados, $permitidos);
+
+        if (isset($dadosAtualizar['senha']) && $dadosAtualizar['senha'] !== '') {
+            $dadosAtualizar['senha'] = password_hash($dadosAtualizar['senha'], PASSWORD_DEFAULT);
+        }
 
         if (empty($dadosAtualizar)) {
             throw MessagesException::erroAtualizar(['Nenhum campo válido foi enviado.']);

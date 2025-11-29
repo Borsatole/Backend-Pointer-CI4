@@ -2,12 +2,14 @@
 
 namespace App\Models;
 
+use App\Traits\CrudTrait;
 use CodeIgniter\Model;
 use App\Traits\PaginacaoTrait;
 
 class Usuario extends Model
 {
     use PaginacaoTrait;
+    use CrudTrait;
     protected $table = 'usuarios';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
@@ -88,6 +90,11 @@ class Usuario extends Model
     public function buscarPorId(int $id): ?array
     {
         return $this->find($id);
+    }
+
+    public function transformarEmHash(string $senha): string
+    {
+        return password_hash($senha, PASSWORD_DEFAULT);
     }
 
 }

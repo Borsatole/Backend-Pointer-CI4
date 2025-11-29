@@ -50,6 +50,8 @@ class AuthController extends BaseController
     }
 
 
+
+
     public function validarToken(): ResponseInterface
     {
 
@@ -67,19 +69,4 @@ class AuthController extends BaseController
         }
     }
 
-    // private function tratarErro(\Exception $e): ResponseInterface
-    // {
-    //     $status = ($e->getCode() >= 100 && $e->getCode() < 600)
-    //         ? $e->getCode()
-    //         : 500;
-
-    //     // log_message('error', "[AuthController] {$e->getMessage()}");
-
-    //     return $this->response->setJSON([
-    //         'success' => false,
-    //         'message' => "Não foi possível conectar ao servidor",
-    //         'messagedetail' => $e->getMessage(),
-    //         'error' => ENVIRONMENT === 'development' ? $e->getTraceAsString() : null,
-    //     ])->setStatusCode($status);
-    // }
 }

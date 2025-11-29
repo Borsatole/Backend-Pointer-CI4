@@ -34,7 +34,7 @@ $routes->group('usuarios', ['filter' => 'autenticacao'], function ($routes) {
         ['filter' => 'permission:usuario.visualizar']
     );
 
-    $routes->post(
+    $routes->put(
         '(:num)',
         'UsuarioController::update/$1',
         ['filter' => 'permission:usuario.editar']
