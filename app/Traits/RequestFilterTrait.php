@@ -54,7 +54,7 @@ trait RequestFilterTrait
         // 🔹 ORDENAÇÃO
         if ($options['ordering']) {
             $result['order_by'] = $request->getGet('order_by') ?: 'id';
-            $result['order_dir'] = $request->getGet('order_dir') ?: 'asc';
+            $result['order_dir'] = $request->getGet('order_dir') ?: 'desc';
         }
 
         // Campos que precisam ser ignorados nos filtros dinâmicos
@@ -66,8 +66,8 @@ trait RequestFilterTrait
         }
 
         if ($options['dates']) {
-            $ignore[] = 'data_inicio';
-            $ignore[] = 'data_fim';
+            $ignore[] = 'data_minima';
+            $ignore[] = 'data_maxima';
         }
 
         if ($options['ordering']) {

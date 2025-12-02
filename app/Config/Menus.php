@@ -1,18 +1,15 @@
 <?php
 
 return [
-    1 => [ // Administrador
+    // Administrador
+    1 => [
         ['id' => 1, 'nome' => 'Dashboard', 'rota' => '/', 'icone' => 'dashboard'],
-        ['id' => 7, 'nome' => 'Demandas', 'rota' => '/demandas', 'icone' => 'demandas'],
-        ['id' => 2, 'nome' => 'Locacoes', 'rota' => '/estoque', 'icone' => 'estoque'],
-        ['id' => 3, 'nome' => 'Clientes', 'rota' => '/clientes', 'icone' => 'clientes'],
-        // ['id' => 6, 'nome' => 'Níveis de Usuários', 'rota' => '/acesso-niveis', 'icone' => 'permissoes'],
-        
-
-
+        ['id' => 2, 'nome' => 'Condominios', 'rota' => '/condominios', 'icone' => 'condominios'],
+        ['id' => 3, 'nome' => 'Registrar Visita', 'rota' => '/visitas', 'icone' => 'visitas'],
+        ['id' => 4, 'nome' => 'Chamados', 'rota' => '/chamados', 'icone' => 'chamados'],
     ],
-
-    2 => [ // Padrão
+    // Padrão
+    2 => [
         ['id' => 1, 'nome' => 'Dashboard', 'rota' => '/', 'icone' => 'dashboard'],
         ['id' => 7, 'nome' => 'Demandas', 'rota' => '/demandas', 'icone' => 'demandas'],
         ['id' => 2, 'nome' => 'Locacoes', 'rota' => '/estoque', 'icone' => 'estoque'],
