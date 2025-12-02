@@ -5,17 +5,20 @@ namespace App\Services;
 
 use App\Exceptions\MessagesException;
 use App\Models\VistoriasModel;
+use App\Models\ItensVistoriados;
 use Config\Database;
 
 
 class VistoriasService
 {
     private VistoriasModel $model;
+    private ItensVistoriados $itensVistoriados;
     private $db;
 
     public function __construct()
     {
         $this->model = new VistoriasModel();
+        $this->itensVistoriados = new ItensVistoriados();
         $this->db = Database::connect();
     }
 
@@ -47,9 +50,7 @@ class VistoriasService
 
     public function criar(array $dados): array
     {
-
-
-        // $this->validarCampoObrigatorio($dados, 'locacao_item_id');
+        $this->validarCampoObrigatorio($dados, 'id_condominio');
 
         $permitidos = $this->model->allowedFields;
         $dadosCriar = $this->filtrarCamposPermitidos($dados, $permitidos);
@@ -61,24 +62,8 @@ class VistoriasService
         $itens_vistoriados = $dados['itens_vistoriados'];
 
         if (empty($itens_vistoriados)) {
-
             throw MessagesException::erroCriar(['Nenhum item vistoriado foi enviado.']);
-
         }
-
-        $teste = [];
-
-        foreach ($itens_vistoriados as $key => $item) {
-
-            $teste[$key] = $item;
-
-        }
-
-
-
-        // ex buscar dado
-        // $id = $dadosCriar['id'];
-
 
         $this->db->transStart();
 
@@ -88,14 +73,18 @@ class VistoriasService
 
         $id = $this->model->getInsertID();
 
+        foreach ($itens_vistoriados as $item) {
+            $item['id_vistoria'] = $id;
+            $this->itensVistoriados->criar($item);
+        }
+
         $this->db->transComplete();
 
         if (!$this->db->transStatus()) {
             throw MessagesException::erroAtualizar(['Erro na transação']);
         }
 
-        // return $this->buscar($id);
-        return $teste;
+        return $this->buscar($id);
     }
 
     public function atualizar(int $id, array $dados): array

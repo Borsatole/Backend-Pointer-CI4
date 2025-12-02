@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Traits\PaginacaoTrait;
+use App\Traits\CrudTrait;
 
 class ItensVistoriados extends Model
 {
+    use PaginacaoTrait, CrudTrait;
     protected $table = 'itensvistoriados';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;

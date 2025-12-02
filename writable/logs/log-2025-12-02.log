@@ -1,13 +1,4 @@
-WARNING - 2025-12-02 08:33:45 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:02:44 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+WARNING - 2025-12-02 13:31:59 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -16,7 +7,7 @@ WARNING - 2025-12-02 09:02:44 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:03:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+WARNING - 2025-12-02 13:32:39 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -25,7 +16,7 @@ WARNING - 2025-12-02 09:03:11 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:04:10 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+WARNING - 2025-12-02 13:33:19 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -34,8 +25,7 @@ WARNING - 2025-12-02 09:04:10 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:04:10 --> [Controller Generico] Call to undefined method App\Models\VistoriasModel::listarComPaginacao
-WARNING - 2025-12-02 09:04:42 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+WARNING - 2025-12-02 13:33:53 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -44,7 +34,7 @@ WARNING - 2025-12-02 09:04:42 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:08:19 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+WARNING - 2025-12-02 18:49:03 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -53,64 +43,8 @@ WARNING - 2025-12-02 09:08:19 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:08:19 --> [Controller Generico] Call to undefined method App\Models\VistoriasModel::buscaComNomeCondominio
-WARNING - 2025-12-02 09:09:07 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:09:07 --> mysqli_sql_exception: Unknown column 'visitas.id' in 'where clause' in C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
-Stack trace:
-#0 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `vistori...', 0)
-#1 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `vistori...')
-#2 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `vistori...')
-#3 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `vistori...', Array, false)
-#4 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
-#6 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Services\VistoriasService.php(41): CodeIgniter\BaseModel->first()
-#7 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Controllers\VistoriasController.php(50): App\Services\VistoriasService->buscar(1)
-#8 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\VistoriasController->show('1')
-#9 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
-#10 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
-#12 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#13 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#14 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
-#15 {main}
-ERROR - 2025-12-02 09:09:07 --> [Controller Generico] Unknown column 'visitas.id' in 'where clause'
-WARNING - 2025-12-02 09:09:27 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:09:27 --> mysqli_sql_exception: Unknown column 'visitas.id' in 'where clause' in C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
-Stack trace:
-#0 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `vistori...', 0)
-#1 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `vistori...')
-#2 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `vistori...')
-#3 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `vistori...', Array, false)
-#4 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
-#6 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Services\VistoriasService.php(41): CodeIgniter\BaseModel->first()
-#7 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Controllers\VistoriasController.php(50): App\Services\VistoriasService->buscar(1)
-#8 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\VistoriasController->show('1')
-#9 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
-#10 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
-#12 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#13 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#14 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
-#15 {main}
-ERROR - 2025-12-02 09:09:27 --> [Controller Generico] Unknown column 'visitas.id' in 'where clause'
-WARNING - 2025-12-02 09:09:32 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:49:03 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:51:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -119,412 +53,8 @@ WARNING - 2025-12-02 09:09:32 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:09:55 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:09:56 --> mysqli_sql_exception: Unknown column 'visitas.id' in 'where clause' in C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
-Stack trace:
-#0 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `vistori...', 0)
-#1 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `vistori...')
-#2 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `vistori...')
-#3 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `vistori...', Array, false)
-#4 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
-#6 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Services\VistoriasService.php(41): CodeIgniter\BaseModel->first()
-#7 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Controllers\VistoriasController.php(50): App\Services\VistoriasService->buscar(1)
-#8 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\VistoriasController->show('1')
-#9 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
-#10 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
-#12 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#13 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#14 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
-#15 {main}
-ERROR - 2025-12-02 09:09:56 --> [Controller Generico] Unknown column 'visitas.id' in 'where clause'
-WARNING - 2025-12-02 09:10:09 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:10:09 --> mysqli_sql_exception: Unknown column 'visitas.id_condominio' in 'on clause' in C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
-Stack trace:
-#0 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `vistori...', 0)
-#1 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `vistori...')
-#2 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `vistori...')
-#3 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `vistori...', Array, false)
-#4 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
-#6 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Services\VistoriasService.php(41): CodeIgniter\BaseModel->first()
-#7 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Controllers\VistoriasController.php(50): App\Services\VistoriasService->buscar(1)
-#8 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\VistoriasController->show('1')
-#9 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
-#10 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#11 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
-#12 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#13 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#14 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
-#15 {main}
-ERROR - 2025-12-02 09:10:09 --> [Controller Generico] Unknown column 'visitas.id_condominio' in 'on clause'
-WARNING - 2025-12-02 09:10:30 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:10:30 --> [Controller Generico] Registro 1 não encontrado
-WARNING - 2025-12-02 09:10:33 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/2', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:10:33 --> [Controller Generico] Registro 2 não encontrado
-WARNING - 2025-12-02 09:10:35 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/3', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:10:35 --> [Controller Generico] Registro 3 não encontrado
-WARNING - 2025-12-02 09:10:36 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:11:35 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:11:41 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:11:41 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 09:11:43 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:11:43 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:11:45 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:12:48 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:12:48 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:12:53 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:12:53 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:12:58 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:12:58 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:14:16 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:16 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:14:18 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/5', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:18 --> [Controller Generico] Registro 5 não encontrado
-WARNING - 2025-12-02 09:14:20 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:14:27 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/55', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:27 --> [Controller Generico] Registro 55 não encontrado
-WARNING - 2025-12-02 09:14:29 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:14:30 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:14:33 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:33 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 09:14:35 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:35 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:14:37 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/50', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:37 --> [Controller Generico] Registro 50 não encontrado
-WARNING - 2025-12-02 09:14:41 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/49', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:41 --> [Controller Generico] Registro 49 não encontrado
-WARNING - 2025-12-02 09:14:44 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:14:44 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:14:46 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:15:25 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/5', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:15:25 --> [Controller Generico] Registro 5 não encontrado
-WARNING - 2025-12-02 09:15:30 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:15:30 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:15:32 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:15:32 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:15:34 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/5', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:15:34 --> [Controller Generico] Registro 5 não encontrado
-WARNING - 2025-12-02 09:15:38 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/61', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:15:38 --> [Controller Generico] Registro 61 não encontrado
-WARNING - 2025-12-02 09:15:41 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:15:41 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:15:46 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:15:53 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:21:27 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:21:27 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 09:21:30 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:21:30 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:21:33 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:24:31 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:24:31 --> [Controller Generico] Call to undefined method App\Models\VistoriasModel::buscaVistoriaPeloId
-WARNING - 2025-12-02 09:24:49 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:25:41 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:51:11 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:52:26 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -533,7 +63,8 @@ WARNING - 2025-12-02 09:25:41 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:26:23 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:52:26 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:52:33 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -542,28 +73,8 @@ WARNING - 2025-12-02 09:26:23 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:26:23 --> mysqli_sql_exception: Unknown column 'usuarios.nome' in 'field list' in C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
-Stack trace:
-#0 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `vistori...', 0)
-#1 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `vistori...')
-#2 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `vistori...')
-#3 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `vistori...', Array, false)
-#4 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
-#5 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(10, 0)
-#6 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\BaseModel.php(1281): CodeIgniter\BaseModel->findAll(10, 0)
-#7 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Traits\PaginacaoTrait.php(134): CodeIgniter\BaseModel->paginate(10, 'default', 1)
-#8 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Services\VistoriasService.php(32): App\Models\VistoriasModel->listarComPaginacao(Array)
-#9 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\app\Controllers\VistoriasController.php(34): App\Services\VistoriasService->listar(Array)
-#10 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\VistoriasController->index()
-#11 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
-#12 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
-#13 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
-#14 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
-#15 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
-#16 C:\Users\HomeUser\Desktop\DEVELOPER\Pointer\backend\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\HomeUs...')
-#17 {main}
-ERROR - 2025-12-02 09:26:23 --> [Controller Generico] Unknown column 'usuarios.nome' in 'field list'
-WARNING - 2025-12-02 09:27:20 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:52:33 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:52:50 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -572,7 +83,8 @@ WARNING - 2025-12-02 09:27:20 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:27:44 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:52:50 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:53:17 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -581,65 +93,8 @@ WARNING - 2025-12-02 09:27:44 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:29:08 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/2', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:29:08 --> [Controller Generico] Registro 2 não encontrado
-WARNING - 2025-12-02 09:29:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/51', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:29:11 --> [Controller Generico] Registro 51 não encontrado
-WARNING - 2025-12-02 09:29:16 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:29:16 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 09:29:18 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:29:18 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 09:29:19 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:29:50 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:29:56 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:53:17 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:53:44 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -648,354 +103,8 @@ WARNING - 2025-12-02 09:29:56 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:30:02 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:30:02 --> [Controller Generico] Registro 1 não encontrado
-WARNING - 2025-12-02 09:30:08 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/1', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:30:08 --> [Controller Generico] Registro 1 não encontrado
-WARNING - 2025-12-02 09:30:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:30:52 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:32:40 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:32:40 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:34:09 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:34:09 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:34:13 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:34:13 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:34:14 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:34:14 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:36:02 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:36:02 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:36:39 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:36:39 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:42:18 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:42:18 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:42:41 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:42:41 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:43:55 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:43:55 --> [Controller Generico] Registro 53 não encontrado
-WARNING - 2025-12-02 09:45:31 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:45:31 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:46:10 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:46:10 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:49:12 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:49:12 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:49:14 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:49:14 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:50:00 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 09:50:00 --> [Controller Generico] Registro 54 não encontrado
-WARNING - 2025-12-02 09:52:16 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-DEBUG - 2025-12-02 09:52:16 --> Buscando ID: 54
-DEBUG - 2025-12-02 09:52:16 --> Registro encontrado: Array
-(
-    [id] => 54
-    [id_condominio] => 1
-    [data_vistoria] => 2025-11-26
-    [responsavel] => 1
-    [observacao_geral] => tudo certo
-    [created_at] => 2025-11-26 20:20:33
-    [updated_at] => 2025-11-26 20:20:33
-    [deleted_at] => 
-)
-
-WARNING - 2025-12-02 09:53:21 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:54:53 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:57:18 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:57:28 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:57:30 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:57:31 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 09:57:49 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:24:48 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:24:56 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:24:58 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:24:58 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 11:25:00 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/54', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:25:02 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:25:03 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/55', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:25:03 --> [Controller Generico] Registro 55 não encontrado
-WARNING - 2025-12-02 11:25:05 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:27:39 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/52', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:27:39 --> [Controller Generico] Registro 52 não encontrado
-WARNING - 2025-12-02 11:27:41 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/53', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:30:01 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
+ERROR - 2025-12-02 18:53:45 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:54:07 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1004,26 +113,8 @@ WARNING - 2025-12-02 11:30:01 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:30:21 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('visitas/55', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:30:21 --> [Controller Generico] Registro 55 não encontrado
-WARNING - 2025-12-02 11:30:39 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 38.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias/55', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:37:00 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 37.
+ERROR - 2025-12-02 18:54:07 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
+WARNING - 2025-12-02 18:54:40 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1032,7 +123,7 @@ WARNING - 2025-12-02 11:37:00 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:38:53 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 37.
+WARNING - 2025-12-02 18:55:43 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1041,8 +132,7 @@ WARNING - 2025-12-02 11:38:53 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:38:53 --> [Controller Generico] Undefined property: stdClass::$id
-WARNING - 2025-12-02 11:39:25 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
+WARNING - 2025-12-02 18:56:07 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1051,8 +141,7 @@ WARNING - 2025-12-02 11:39:25 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:39:25 --> [Controller Generico] Undefined property: stdClass::$id
-WARNING - 2025-12-02 11:39:39 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
+WARNING - 2025-12-02 18:57:04 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1061,8 +150,18 @@ WARNING - 2025-12-02 11:39:39 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:39:39 --> [Controller Generico] Undefined property: stdClass::$id
-WARNING - 2025-12-02 11:45:08 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
+CRITICAL - 2025-12-02 18:57:04 --> TypeError: App\Services\VistoriasService::criar(): Return value must be of type array, int returned
+[Method: POST, Route: vistorias]
+in APPPATH\Services\VistoriasService.php on line 92.
+ 1 APPPATH\Controllers\VistoriasController.php(83): App\Services\VistoriasService->criar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VistoriasController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
+WARNING - 2025-12-02 18:57:21 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1071,8 +170,18 @@ WARNING - 2025-12-02 11:45:08 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 11:45:09 --> [Controller Generico] Undefined property: CodeIgniter\HTTP\IncomingRequest::$sub
-WARNING - 2025-12-02 11:46:42 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
+CRITICAL - 2025-12-02 18:57:21 --> Error: Call to a member function getInsertID() on int
+[Method: POST, Route: vistorias]
+in APPPATH\Services\VistoriasService.php on line 73.
+ 1 APPPATH\Controllers\VistoriasController.php(83): App\Services\VistoriasService->criar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VistoriasController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
+WARNING - 2025-12-02 18:57:35 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1081,7 +190,18 @@ WARNING - 2025-12-02 11:46:42 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:48:08 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
+CRITICAL - 2025-12-02 18:57:35 --> TypeError: App\Services\VistoriasService::criar(): Return value must be of type array, int returned
+[Method: POST, Route: vistorias]
+in APPPATH\Services\VistoriasService.php on line 92.
+ 1 APPPATH\Controllers\VistoriasController.php(83): App\Services\VistoriasService->criar([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VistoriasController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VistoriasController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
+WARNING - 2025-12-02 18:58:40 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
@@ -1090,111 +210,7 @@ WARNING - 2025-12-02 11:48:08 --> [DEPRECATED] Creation of dynamic property Code
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 11:55:20 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 12:02:58 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 12:04:55 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 12:04:55 --> [Controller Generico] Undefined array key "id"
-WARNING - 2025-12-02 12:05:14 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 12:05:14 --> [Controller Generico] Undefined array key "id"
-WARNING - 2025-12-02 12:06:11 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 12:06:11 --> [Controller Generico] Undefined array key "id"
-WARNING - 2025-12-02 12:06:18 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 12:08:07 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 12:08:26 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 12:08:42 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-WARNING - 2025-12-02 12:11:45 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 12:11:45 --> [Controller Generico] Erro ao criar item registro: Nenhum item foi enviado.
-WARNING - 2025-12-02 12:11:56 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
- 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
- 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
- 3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')
- 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
- 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
- 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
- 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
- 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\HomeUser\\Desktop\\DEVELOPER\\Pointer\\backend\\public\\index.php')
-ERROR - 2025-12-02 12:11:56 --> [Controller Generico] Erro ao criar item registro: Nenhum item vistoriado foi enviado.
-WARNING - 2025-12-02 12:12:29 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
+WARNING - 2025-12-02 18:59:19 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$user is deprecated in APPPATH\Filters\Autenticacao.php on line 39.
  1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\Autenticacao->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
  2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
  3 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('vistorias', 'before')

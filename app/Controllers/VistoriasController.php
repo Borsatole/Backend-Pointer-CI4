@@ -29,6 +29,7 @@ class VistoriasController extends BaseController
         try {
             $params = $this->getRequestFilters($this->request, [
                 'pagination' => true,
+                'ordering' => true,
                 'dates' => true,
             ]);
 
@@ -70,6 +71,7 @@ class VistoriasController extends BaseController
 
             /** @phpstan-ignore-next-line */
             $dados_usuario = $this->request->user;
+
 
             $data = $this->request->getJSON(true);
             $data['responsavel'] = $dados_usuario->sub ?? null;

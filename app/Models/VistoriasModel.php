@@ -26,6 +26,7 @@ class VistoriasModel extends Model
     protected bool $updateOnlyChanged = true;
 
     protected array $casts = [
+        'id' => 'int',
         'id_condominio' => 'int',
         'responsavel' => 'int',
     ];
