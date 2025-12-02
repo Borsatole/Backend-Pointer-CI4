@@ -7,6 +7,7 @@ use App\Traits\RequestFilterTrait;
 use App\Traits\TratarErroTrait;
 
 
+
 class VistoriasController extends BaseController
 {
     use TratarErroTrait;
@@ -59,16 +60,31 @@ class VistoriasController extends BaseController
         }
     }
 
+
+
     public function create()
     {
+
+
         try {
+
+            /** @phpstan-ignore-next-line */
+            $dados_usuario = $this->request->user;
+
             $data = $this->request->getJSON(true);
+            $data['responsavel'] = $dados_usuario->sub ?? null;
+
+
+
+
+
             $registro = $this->service->criar($data);
 
             return $this->response->setJSON([
                 'success' => true,
                 'message' => 'Criado com sucesso',
                 'registro' => $registro
+                // 'registro' => $teste
             ])->setStatusCode(201);
 
         } catch (\Exception $e) {

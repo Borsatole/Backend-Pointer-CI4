@@ -25,11 +25,14 @@ class VistoriasModel extends Model
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
 
-    protected array $casts = [];
+    protected array $casts = [
+        'id_condominio' => 'int',
+        'responsavel' => 'int',
+    ];
     protected array $castHandlers = [];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
@@ -51,4 +54,26 @@ class VistoriasModel extends Model
     protected $afterFind = [];
     protected $beforeDelete = [];
     protected $afterDelete = [];
+
+    public function buscaComNome()
+    {
+        $this->builder()
+            ->select('vistorias.*, condominios.nome AS condominio_nome, usuarios.nome AS responsavel_nome')
+            ->join('usuarios', 'usuarios.id = vistorias.responsavel', 'left')
+            ->join('condominios', 'condominios.id = vistorias.id_condominio', 'left');
+
+        return $this;
+    }
+
+    public function buscaVistoriaPeloId(int $id): self
+    {
+        $this->builder()
+            ->select('vistorias.*, condominios.nome AS condominio_nome, usuarios.nome AS responsavel_nome')
+            ->join('condominios', 'condominios.id = vistorias.id_condominio', 'left')
+            ->join('usuarios', 'usuarios.id = vistorias.responsavel', 'left')
+            ->where('vistorias.id', $id);
+
+        return $this;
+    }
+
 }

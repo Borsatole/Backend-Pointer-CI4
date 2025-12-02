@@ -10,7 +10,6 @@ use Config\Database;
 
 class VistoriasService
 {
-    // private CondominiosModel $model;
     private VistoriasModel $model;
     private $db;
 
@@ -20,20 +19,24 @@ class VistoriasService
         $this->db = Database::connect();
     }
 
-
     public function listar(array $params): array
     {
+
         $registro = isset($params['pagina'], $params['limite'])
             ? $this->model->listarComPaginacao($params)
             : $this->model->listarSemPaginacao($params);
 
+        $registro = $this->model
+            ->buscaComNome()
+            ->listarComPaginacao($params);
+
         return $registro;
     }
 
-
     public function buscar(int $id): array
     {
-        $registro = $this->model->buscarPorId($id);
+        // $registro = $this->model->buscarPorId($id);
+        $registro = $this->model->buscaVistoriaPeloId($id)->first();
 
         if (!$registro) {
             throw MessagesException::naoEncontrado($id);
@@ -42,9 +45,9 @@ class VistoriasService
         return $registro;
     }
 
-
     public function criar(array $dados): array
     {
+
 
         // $this->validarCampoObrigatorio($dados, 'locacao_item_id');
 
@@ -54,6 +57,24 @@ class VistoriasService
         if (empty($dadosCriar)) {
             throw MessagesException::erroCriar(['Nenhum campo válido foi enviado.']);
         }
+
+        $itens_vistoriados = $dados['itens_vistoriados'];
+
+        if (empty($itens_vistoriados)) {
+
+            throw MessagesException::erroCriar(['Nenhum item vistoriado foi enviado.']);
+
+        }
+
+        $teste = [];
+
+        foreach ($itens_vistoriados as $key => $item) {
+
+            $teste[$key] = $item;
+
+        }
+
+
 
         // ex buscar dado
         // $id = $dadosCriar['id'];
@@ -73,12 +94,12 @@ class VistoriasService
             throw MessagesException::erroAtualizar(['Erro na transação']);
         }
 
-        return $this->buscar($id);
+        // return $this->buscar($id);
+        return $teste;
     }
 
     public function atualizar(int $id, array $dados): array
     {
-
         $registro = $this->model->buscarPorId($id)
             ?? throw MessagesException::naoEncontrado($id);
 
@@ -96,9 +117,9 @@ class VistoriasService
             throw MessagesException::erroAtualizar($this->model->errors());
         }
 
+        $registro = $this->buscar($id);
 
-
-        return $this->buscar($id);
+        return $registro;
     }
 
     public function deletar(int $id): bool

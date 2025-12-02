@@ -34,8 +34,12 @@ class Autenticacao implements FilterInterface
         try {
             $secret = env('JWT_SECRET'); // pegue do .env
             $decoded = JWT::decode($token, new Key($secret, 'HS256'));
+
             // Armazena o usuário decodificado na request para usar nos controllers
             $request->user = $decoded;
+            service('request')->user = $decoded;
+
+
         } catch (\Exception $e) {
             return service('response')->setJSON([
                 'success' => false,
