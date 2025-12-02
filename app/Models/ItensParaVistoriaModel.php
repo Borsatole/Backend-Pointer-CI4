@@ -2,10 +2,15 @@
 
 namespace App\Models;
 
+use App\Traits\CrudTrait;
+use App\Traits\PaginacaoTrait;
 use CodeIgniter\Model;
+
 
 class ItensParaVistoriaModel extends Model
 {
+    use PaginacaoTrait, CrudTrait;
+
     protected $table = 'itensparavistorias';
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
@@ -23,7 +28,10 @@ class ItensParaVistoriaModel extends Model
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
 
-    protected array $casts = [];
+    protected array $casts = [
+        'id' => 'int',
+        'id_condominio' => 'int',
+    ];
     protected array $castHandlers = [];
 
     // Dates
@@ -49,4 +57,10 @@ class ItensParaVistoriaModel extends Model
     protected $afterFind = [];
     protected $beforeDelete = [];
     protected $afterDelete = [];
+
+
+    public function buscarPorCondominio($id_condominio)
+    {
+        return $this->where('id_condominio', $id_condominio)->findAll();
+    }
 }

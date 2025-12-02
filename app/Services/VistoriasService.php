@@ -24,16 +24,17 @@ class VistoriasService
 
     public function listar(array $params): array
     {
-
-        $registro = isset($params['pagina'], $params['limite'])
-            ? $this->model->listarComPaginacao($params)
-            : $this->model->listarSemPaginacao($params);
-
-        $registro = $this->model
-            ->buscaComNome()
+        $registros = $this->model
+            ->comItens()
             ->listarComPaginacao($params);
 
-        return $registro;
+        // adiciona itens vistoriados com nome
+        foreach ($registros['registros'] as &$vistoria) {
+            $vistoria['itens_vistoriados'] = $this->itensVistoriados
+                ->listarPorVistoria($vistoria['id']);
+        }
+
+        return $registros;
     }
 
     public function buscar(int $id): array
@@ -44,6 +45,11 @@ class VistoriasService
         if (!$registro) {
             throw MessagesException::naoEncontrado($id);
         }
+
+        // adiciona itens vistoriados com nome
+        $registro['itens_vistoriados'] = $this->itensVistoriados
+            ->listarPorVistoria($id);
+
 
         return $registro;
     }
@@ -89,26 +95,54 @@ class VistoriasService
 
     public function atualizar(int $id, array $dados): array
     {
+        // Verifica se registro existe
         $registro = $this->model->buscarPorId($id)
             ?? throw MessagesException::naoEncontrado($id);
 
-        $permitidos = $this->model->allowedFields;
+        $itens_vistoriados = $dados['itens_vistoriados'] ?? null;
 
+        $permitidos = $this->model->allowedFields;
         $dadosAtualizar = $this->filtrarCamposPermitidos($dados, $permitidos);
 
+        // Inicia transação
+        $this->db->transStart();
 
-
-        if (empty($dadosAtualizar)) {
-            throw MessagesException::erroAtualizar(['Nenhum campo válido foi enviado.']);
+        // Atualiza vistoria somente se houver campos válidos
+        if (!empty($dadosAtualizar)) {
+            if (!$this->model->atualizar($id, $dadosAtualizar)) {
+                $this->db->transRollback();
+                throw MessagesException::erroAtualizar($this->model->errors());
+            }
         }
 
-        if (!$this->model->atualizar($id, $dadosAtualizar)) {
-            throw MessagesException::erroAtualizar($this->model->errors());
+        // Atualiza itens vistoriados
+        if (!empty($itens_vistoriados)) {
+
+            // remove itens antigos
+            if (!$this->itensVistoriados->deletarPorVistoria($id)) {
+                $this->db->transRollback();
+                throw MessagesException::erroAtualizar(['Erro ao remover itens antigos.']);
+            }
+
+            // adiciona novos itens
+            foreach ($itens_vistoriados as $item) {
+                $item['id_vistoria'] = $id;
+
+                if (!$this->itensVistoriados->criar($item)) {
+                    $this->db->transRollback();
+                    throw MessagesException::erroAtualizar(['Erro ao adicionar item vistoriado.']);
+                }
+            }
         }
 
-        $registro = $this->buscar($id);
+        $this->db->transComplete();
 
-        return $registro;
+        if ($this->db->transStatus() === false) {
+            throw MessagesException::erroAtualizar(['Falha ao atualizar vistoria.']);
+        }
+
+        // Retorna o registro completo atualizado
+        return $this->buscar($id);
     }
 
     public function deletar(int $id): bool
@@ -119,6 +153,11 @@ class VistoriasService
             ?? throw MessagesException::naoEncontrado($id);
 
         // $locacao_item_id = $registro['locacao_item_id'];
+
+        if (!$this->itensVistoriados->deletarPorVistoria($id)) {
+            $this->db->transRollback();
+            throw MessagesException::erroDeletar();
+        }
 
         if (!$this->model->deletar($id)) {
             $this->db->transRollback();

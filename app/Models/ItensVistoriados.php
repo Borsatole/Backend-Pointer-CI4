@@ -25,11 +25,16 @@ class ItensVistoriados extends Model
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
 
-    protected array $casts = [];
+    protected array $casts = [
+        'id' => 'int',
+        'id_vistoria' => 'int',
+        'id_item_condominio' => 'int',
+
+    ];
     protected array $castHandlers = [];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat = 'datetime';
     protected $createdField = 'created_at';
     protected $updatedField = 'updated_at';
@@ -51,4 +56,21 @@ class ItensVistoriados extends Model
     protected $afterFind = [];
     protected $beforeDelete = [];
     protected $afterDelete = [];
+
+    function deletarPorVistoria(int $id)
+    {
+        return $this->where('id_vistoria', $id)->delete();
+    }
+
+    public function listarPorVistoria($idVistoria)
+    {
+        return $this->select('
+            itensvistoriados.*, 
+            itensparavistorias.nome_item AS nome_item
+        ')
+            ->join('itensparavistorias', 'itensparavistorias.id = itensvistoriados.id_item_condominio', 'left')
+            ->where('itensvistoriados.id_vistoria', $idVistoria)
+            ->findAll();
+    }
+
 }

@@ -37,7 +37,9 @@ class Autenticacao implements FilterInterface
 
             // Armazena o usuário decodificado na request para usar nos controllers
             $request->user = $decoded;
-            service('request')->user = $decoded;
+
+            $req = service('request');
+            $req->user = $decoded;
 
 
         } catch (\Exception $e) {

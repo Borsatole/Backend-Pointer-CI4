@@ -68,17 +68,10 @@ class VistoriasController extends BaseController
 
 
         try {
-
-            /** @phpstan-ignore-next-line */
-            $dados_usuario = $this->request->user;
-
+            $dados_usuario = service('request')->user ?? null;
 
             $data = $this->request->getJSON(true);
             $data['responsavel'] = $dados_usuario->sub ?? null;
-
-
-
-
 
             $registro = $this->service->criar($data);
 

@@ -214,3 +214,35 @@ $routes->group('vistorias', ['filter' => 'autenticacao'], function ($routes) {
         ['filter' => 'permission:papeis.excluir']
     );
 });
+
+$routes->group('itensparavistorias', ['filter' => 'autenticacao'], function ($routes) {
+    $routes->get(
+        '',
+        'ItensParaVistoriaController::index',
+        ['filter' => 'permission:papeis.visualizar']
+    );
+
+    $routes->post(
+        '',
+        'ItensParaVistoriaController::create',
+        ['filter' => 'permission:papeis.criar']
+    );
+
+    $routes->get(
+        '(:num)',
+        'ItensParaVistoriaController::show/$1',
+        ['filter' => 'permission:papeis.visualizar']
+    );
+
+    $routes->put(
+        '(:num)',
+        'ItensParaVistoriaController::update/$1',
+        ['filter' => 'permission:papeis.editar']
+    );
+
+    $routes->delete(
+        '(:num)',
+        'ItensParaVistoriaController::delete/$1',
+        ['filter' => 'permission:papeis.excluir']
+    );
+});
