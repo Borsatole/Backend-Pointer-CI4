@@ -246,3 +246,35 @@ $routes->group('itensparavistorias', ['filter' => 'autenticacao'], function ($ro
         ['filter' => 'permission:papeis.excluir']
     );
 });
+
+$routes->group('itensvistoriados', ['filter' => 'autenticacao'], function ($routes) {
+    $routes->get(
+        '',
+        'ItensVistoriadosController::index',
+        ['filter' => 'permission:papeis.visualizar']
+    );
+
+    $routes->post(
+        '',
+        'ItensVistoriadosController::create',
+        ['filter' => 'permission:papeis.criar']
+    );
+
+    $routes->get(
+        '(:num)',
+        'ItensVistoriadosController::show/$1',
+        ['filter' => 'permission:papeis.visualizar']
+    );
+
+    $routes->put(
+        '(:num)',
+        'ItensVistoriadosController::update/$1',
+        ['filter' => 'permission:papeis.editar']
+    );
+
+    $routes->delete(
+        '(:num)',
+        'ItensVistoriadosController::delete/$1',
+        ['filter' => 'permission:papeis.excluir']
+    );
+});

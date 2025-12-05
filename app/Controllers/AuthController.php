@@ -40,6 +40,8 @@ class AuthController extends BaseController
                 'message' => 'Login realizado com sucesso',
                 'usuario' => $resultado['usuario'],
                 'menu' => $resultado['menu'],
+                'vencido' => $resultado['vencido'],
+                'dataProximoVencimento' => $resultado['dataProximoVencimento'],
                 'token' => $resultado['token'],
                 'expirationTime' => $resultado['expirationTime'],
                 'serverTime' => time(),

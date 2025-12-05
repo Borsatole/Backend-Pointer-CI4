@@ -4,7 +4,9 @@ namespace App\Services;
 
 use App\Models\Usuario;
 use App\Models\NiveisModel;
+use App\Models\SistemModel;
 use App\Exceptions\AuthException;
+use App\Exceptions\MessagesException;
 use App\Exceptions\NivelException;
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
@@ -16,12 +18,14 @@ class AuthService
 {
     protected Usuario $usuarios;
     protected NiveisModel $niveis;
+    protected SistemModel $sistem;
     protected $db;
 
     public function __construct()
     {
         $this->usuarios = new Usuario();
         $this->niveis = new NiveisModel();
+        $this->sistem = new SistemModel();
         $this->db = \Config\Database::connect();
         helper('email');
     }
@@ -31,15 +35,31 @@ class AuthService
      */
     public function autenticar(string $email, string $senha): array
     {
+        $dataAtual = date('Y-m-d');
         $usuario = $this->usuarios->where('email', $email)->first();
+        $sistema = $this->sistem->first();
 
+
+        // verificacoes de sistema
+        if ($sistema['licenca'] != 'ativo') {
+            throw MessagesException::erroGenerico('Entre em contato com o administrador do sistema.');
+        }
+
+        if ($sistema['modo_manutencao']) {
+            throw MessagesException::erroGenerico($sistema['mensagem_manutencao']);
+        }
+
+
+        
+
+        // verificacoes de usuario
         if (!$usuario) {
             throw AuthException::naoExiste();
         }
 
-        // if (!$usuario['ativo']) {
-        //     throw AuthException::naoAtivo();
-        // }
+        if (!$usuario['ativo']) {
+            throw MessagesException::erroGenerico('Conta suspensa. Entre em contato com o administrador do sistema.');
+        }
 
         if (!$this->validarSenha($senha, $usuario['senha'])) {
             throw AuthException::senhaIncorreta();
@@ -55,7 +75,9 @@ class AuthService
 
         $payload = $this->criarPayloadJWT($usuario);
         $token = $this->gerarJWT($payload);
-        $menu = $usuario['ativo'] ? $this->buscaMenu($usuario) : [];
+        $menu = $sistema['data_proximo_vencimento'] >= $dataAtual ? $this->buscaMenu($usuario) : [];
+        $vencido = $sistema['data_proximo_vencimento'] > $dataAtual ? true : false;
+        $dataProximoVencimento = $sistema['data_proximo_vencimento'];
         $expirationTime = $payload['exp'];
 
         // enviarEmailSimples(
@@ -91,6 +113,8 @@ class AuthService
         return [
             'usuario' => $usuario,
             'menu' => $menu,
+            'vencido' => $vencido,
+            'dataProximoVencimento' => $dataProximoVencimento,
             'token' => $token,
             'expirationTime' => $expirationTime
         ];

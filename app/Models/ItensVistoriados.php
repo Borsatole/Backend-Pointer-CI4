@@ -73,4 +73,17 @@ class ItensVistoriados extends Model
             ->findAll();
     }
 
+    public function listarComNomeCondominio(int $id): self
+    {
+        $this->builder()
+            ->select('itensvistoriados.*, itensparavistorias.nome_item AS nome_item')
+            ->join('itensparavistorias', 'itensparavistorias.id = itensvistoriados.id_item_condominio', 'left')
+            ->where('itensvistoriados.id', $id);
+
+        return $this;
+    }
+
+
+
+
 }
