@@ -27,7 +27,7 @@ class CondominiosController extends BaseController
     {
         try {
             $params = $this->getRequestFilters($this->request, [
-                'pagination' => true,
+                'pagination' => false,
                 'dates' => true,
             ]);
 

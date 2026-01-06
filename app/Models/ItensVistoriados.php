@@ -64,18 +64,20 @@ class ItensVistoriados extends Model
 
     public function listarPorVistoria($idVistoria)
     {
-        return $this->select('
+        return $this->withDeleted()->select('
             itensvistoriados.*, 
             itensparavistorias.nome_item AS nome_item
         ')
             ->join('itensparavistorias', 'itensparavistorias.id = itensvistoriados.id_item_condominio', 'left')
             ->where('itensvistoriados.id_vistoria', $idVistoria)
+            ->orderBy('itensparavistorias.nome_item', 'ASC')
             ->findAll();
     }
 
     public function listarComNomeCondominio(int $id): self
     {
-        $this->builder()
+        $this->withDeleted()->builder()
+            
             ->select('itensvistoriados.*, itensparavistorias.nome_item AS nome_item')
             ->join('itensparavistorias', 'itensparavistorias.id = itensvistoriados.id_item_condominio', 'left')
             ->where('itensvistoriados.id', $id);

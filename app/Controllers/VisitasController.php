@@ -28,7 +28,10 @@ class VisitasController extends BaseController
         try {
             $params = $this->getRequestFilters($this->request, [
                 'pagination' => true,
-                'ordering' => true
+                'dynamic' => true,
+                'dates' => true,
+                'ordering' => true,
+                'campos_exatos' => ['id_condominio']
             ]);
 
             $resultado = $this->service->listar($params);
@@ -62,12 +65,18 @@ class VisitasController extends BaseController
     public function create()
     {
         try {
+            $dados_usuario = service('request')->user ?? null;
+
             $data = $this->request->getJSON(true);
+            $data['responsavel'] = $dados_usuario->sub ?? null;
+
             $registro = $this->service->criar($data);
+
 
             return $this->response->setJSON([
                 'success' => true,
                 'message' => 'Criado com sucesso',
+                'responsavel' => $data['responsavel'],
                 'registro' => $registro
             ])->setStatusCode(201);
 

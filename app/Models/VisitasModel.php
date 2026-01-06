@@ -13,12 +13,14 @@ class VisitasModel extends Model
     protected $primaryKey = 'id';
     protected $useAutoIncrement = true;
     protected $returnType = 'array';
-    protected $useSoftDeletes = false;
+    protected $useSoftDeletes = true;
     protected $protectFields = true;
     protected $allowedFields = [
         'id_condominio',
         'entrada',
         'saida',
+        'mensagem',
+        'responsavel',
     ];
 
     protected bool $allowEmptyInserts = false;
@@ -27,7 +29,7 @@ class VisitasModel extends Model
     protected array $casts = [
         'id' => 'int',
         'id_condominio' => 'int',
-
+        'responsavel' => '?int',
     ];
     protected array $castHandlers = [];
 
@@ -59,11 +61,21 @@ class VisitasModel extends Model
     public function buscaComNomeCondominio()
     {
         $this->builder()
-            ->select('visitas.*, condominios.nome AS condominio_nome')
-            ->join('condominios', 'condominios.id = visitas.id_condominio');
-
+            ->select('visitas.*, 
+                condominios.nome AS condominio_nome, 
+                usuarios.nome AS responsavel_nome'
+            )
+            ->join('condominios', 'condominios.id = visitas.id_condominio')
+            ->join('usuarios', 'usuarios.id = visitas.responsavel', 'left');
 
         return $this;
+    }
+
+    public function contarVisitasPorCondominio(int $id): int
+    {
+        return $this->builder()
+            ->where('visitas.id_condominio', $id)
+            ->countAllResults();
     }
 
 

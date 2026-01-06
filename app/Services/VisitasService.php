@@ -27,9 +27,12 @@ class VisitasService
         //     ? $this->model->listarComPaginacao($params)
         //     : $this->model->listarSemPaginacao($params);
 
+
+
+
         $registro = $this->model
             ->buscaComNomeCondominio()
-            ->listarComPaginacao($params);
+            ->listarComPaginacao($params, 'visitas.entrada');
 
         return $registro;
     }

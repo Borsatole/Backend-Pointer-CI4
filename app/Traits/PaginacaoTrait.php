@@ -14,12 +14,29 @@ trait PaginacaoTrait
         // 🔒 Obtém campos permitidos automaticamente do Model
         $camposPermitidos = $this->obterCamposPermitidos();
 
-        // 🔒 VALIDAÇÃO: Campo de data
-        if (!in_array($campoData, $camposPermitidos, true)) {
+        $campoBase = str_contains($campoData, '.')
+            ? explode('.', $campoData)[1]
+            : $campoData;
+
+        if (!in_array($campoBase, $camposPermitidos, true)) {
             throw new DatabaseException("Campo de data inválido: {$campoData}");
         }
 
-        // 🔹 FILTROS DINÂMICOS COM VALIDAÇÃO
+        // 🔹 FILTROS EXATOS (WHERE =) - PRIORIDADE ALTA
+        if (!empty($params['filtros_exatos']) && is_array($params['filtros_exatos'])) {
+            foreach ($params['filtros_exatos'] as $campo => $valor) {
+                // 🔒 Valida se o campo existe na tabela
+                if (!in_array($campo, $camposPermitidos, true)) {
+                    continue; // Ignora campos não permitidos
+                }
+
+                if ($valor !== '' && $valor !== null) {
+                    $builder->where($campo, $valor); // ✅ Usa WHERE ao invés de LIKE
+                }
+            }
+        }
+
+        // 🔹 FILTROS DINÂMICOS COM LIKE
         if (!empty($params['filtros']) && is_array($params['filtros'])) {
             foreach ($params['filtros'] as $campo => $valor) {
                 // 🔒 Valida se o campo existe na tabela
@@ -53,13 +70,27 @@ trait PaginacaoTrait
 
         // 🔹 ORDENAÇÃO COM VALIDAÇÃO
         if (!empty($params['order_by'])) {
-            if (in_array($params['order_by'], $camposPermitidos, true)) {
+
+            $campoOrder = $params['order_by'];
+
+            // Se não veio qualificado, usa o mesmo prefixo do campoData
+            if (!str_contains($campoOrder, '.') && str_contains($campoData, '.')) {
+                $tabela = explode('.', $campoData)[0];
+                $campoOrder = "{$tabela}.{$campoOrder}";
+            }
+
+            $campoBase = str_contains($campoOrder, '.')
+                ? explode('.', $campoOrder)[1]
+                : $campoOrder;
+
+            if (in_array($campoBase, $camposPermitidos, true)) {
                 $dir = strtoupper($params['order_dir'] ?? 'ASC');
                 $dir = in_array($dir, ['ASC', 'DESC'], true) ? $dir : 'ASC';
 
-                $builder->orderBy($params['order_by'], $dir);
+                $builder->orderBy($campoOrder, $dir);
             }
         }
+
 
         return $builder;
     }
@@ -149,13 +180,11 @@ trait PaginacaoTrait
         $builder = $this;
         $builder = $this->aplicarFiltros($builder, $params, $campoData);
 
-        $limite = (int) ($params['limite_maximo'] ?? 1000);
-        $builder->limit(min($limite, 1000));
-
         return [
             'registros' => $builder->findAll()
         ];
     }
+
 
     /**
      * 🔒 Valida formato de data (Y-m-d)

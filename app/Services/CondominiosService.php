@@ -5,17 +5,27 @@ namespace App\Services;
 
 use App\Exceptions\MessagesException;
 use App\Models\CondominiosModel;
+use App\Models\ItensParaVistoriaModel;
+use App\Models\VisitasModel;
+use App\Models\VistoriasModel;
 use Config\Database;
 
 
 class CondominiosService
 {
     private CondominiosModel $model;
+    private VisitasModel $visitasModel;
+    private VistoriasModel $vistoriasModel;
+    private ItensParaVistoriaModel $itensParaVistoriaModel;
     private $db;
 
     public function __construct()
     {
         $this->model = new CondominiosModel();
+        $this->visitasModel = new VisitasModel();
+        $this->vistoriasModel = new VistoriasModel();
+        $this->itensParaVistoriaModel = new ItensParaVistoriaModel();
+
         $this->db = Database::connect();
     }
 
@@ -26,6 +36,14 @@ class CondominiosService
             ? $this->model->listarComPaginacao($params)
             : $this->model->listarSemPaginacao($params);
 
+        foreach ($registro['registros'] as &$item) {
+
+            $temVistorias = $this->itensParaVistoriaModel->buscarPorCondominio($item['id']);
+
+
+            $item['vistoria'] = $temVistorias ? true : false;
+        }
+
         return $registro;
     }
 
@@ -33,10 +51,16 @@ class CondominiosService
     public function buscar(int $id): array
     {
         $registro = $this->model->buscarPorId($id);
+        $totalVisitas = $this->visitasModel->contarVisitasPorCondominio($id);
 
         if (!$registro) {
             throw MessagesException::naoEncontrado($id);
         }
+
+        $registro['totalVisitas'] = $totalVisitas;
+        $registro['totalVistorias'] = $this->vistoriasModel->contarVistoriasPorCondominio($id);
+
+
 
         return $registro;
     }

@@ -29,6 +29,7 @@ class VistoriasController extends BaseController
         try {
             $params = $this->getRequestFilters($this->request, [
                 'pagination' => true,
+                'dynamic' => true,
                 'ordering' => true,
                 'dates' => true,
             ]);

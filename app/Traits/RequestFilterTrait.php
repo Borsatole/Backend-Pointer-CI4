@@ -4,18 +4,6 @@ namespace App\Traits;
 
 trait RequestFilterTrait
 {
-    /**
-     * Processa filtros da requisição GET com opções flexíveis.
-     *
-     * @param \CodeIgniter\HTTP\IncomingRequest $request
-     * @param array $options  Opções para ativar/desativar partes do filtro:
-     *                        [
-     *                          'pagination' => true/false,
-     *                          'dates'      => true/false,
-     *                          'ordering'   => true/false,
-     *                          'dynamic'    => true/false
-     *                        ]
-     */
     public function getRequestFilters($request, array $options = []): array
     {
         // Valores padrão das opções
@@ -23,7 +11,8 @@ trait RequestFilterTrait
             'pagination' => false,
             'dates' => false,
             'ordering' => false,
-            'dynamic' => false
+            'dynamic' => false,
+            'campos_exatos' => []
         ], $options);
 
         $result = [
@@ -34,6 +23,7 @@ trait RequestFilterTrait
             'order_by' => null,
             'order_dir' => null,
             'filtros' => [],
+            'filtros_exatos' => [],
         ];
 
         $all = $request->getGet();
@@ -57,7 +47,6 @@ trait RequestFilterTrait
             $result['order_dir'] = $request->getGet('order_dir') ?: 'desc';
         }
 
-        // Campos que precisam ser ignorados nos filtros dinâmicos
         $ignore = [];
 
         if ($options['pagination']) {
@@ -79,7 +68,11 @@ trait RequestFilterTrait
         if ($options['dynamic']) {
             foreach ($all as $key => $value) {
                 if (!in_array($key, $ignore)) {
-                    $result['filtros'][$key] = $value;
+                    if (in_array($key, $options['campos_exatos'])) {
+                        $result['filtros_exatos'][$key] = $value;
+                    } else {
+                        $result['filtros'][$key] = $value;
+                    }
                 }
             }
         }

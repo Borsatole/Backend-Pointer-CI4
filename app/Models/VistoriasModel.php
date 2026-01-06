@@ -17,6 +17,7 @@ class VistoriasModel extends Model
     protected $protectFields = true;
     protected $allowedFields = [
         'id_condominio',
+        'id_item_condominio',
         'data_vistoria',
         'responsavel',
         'observacao_geral',
@@ -67,8 +68,6 @@ class VistoriasModel extends Model
     // }
 
 
-
-
     public function buscaVistoriaPeloId(int $id): self
     {
         $this->builder()
@@ -85,6 +84,13 @@ class VistoriasModel extends Model
         return $this->select('vistorias.*, condominios.nome AS condominio_nome, usuarios.nome AS responsavel_nome')
             ->join('condominios', 'condominios.id = vistorias.id_condominio')
             ->join('usuarios', 'usuarios.id = vistorias.responsavel');
+    }
+
+    public function contarVistoriasPorCondominio(int $id): int
+    {
+        return $this->builder()
+            ->where('vistorias.id_condominio', $id)
+            ->countAllResults();
     }
 
 }

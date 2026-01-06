@@ -5,21 +5,30 @@ namespace App\Services;
 
 use App\Exceptions\MessagesException;
 use App\Models\VistoriasModel;
+use App\Models\ItensParaVistoriaModel;
 use App\Models\ItensVistoriados;
+use App\Models\CondominiosModel;
 use Config\Database;
+
 
 
 class VistoriasService
 {
     private VistoriasModel $model;
+    private ItensParaVistoriaModel $itensParaVistoria;
     private ItensVistoriados $itensVistoriados;
+    private CondominiosModel $condominios;
     private $db;
+    
 
     public function __construct()
     {
         $this->model = new VistoriasModel();
+        $this->itensParaVistoria = new ItensParaVistoriaModel();
         $this->itensVistoriados = new ItensVistoriados();
+        $this->condominios = new CondominiosModel();
         $this->db = Database::connect();
+        helper('email');
     }
 
     public function listar(array $params): array
@@ -80,8 +89,30 @@ class VistoriasService
         $id = $this->model->getInsertID();
 
         foreach ($itens_vistoriados as $item) {
-            $item['id_vistoria'] = $id;
-            $this->itensVistoriados->criar($item);
+
+            $dadosItem = [
+                'id_vistoria' => $id,
+                'id_item_condominio' => $item['id'],
+                'situacao_encontrada' => $item['situacao_encontrada'] ?? null,
+                'observacoes' => $item['observacoes'] ?? null,
+            ];
+
+            if ($dadosItem['situacao_encontrada']) {
+                $this->itensParaVistoria->atualizar(
+                $item['id'],
+                [
+                    'situacao' => $dadosItem['situacao_encontrada'],
+                    'ultima_vistoria' => date('Y-m-d H:i:s'),
+                ]
+            );
+            }
+
+            
+
+            
+
+            
+            $this->itensVistoriados->criar($dadosItem);
         }
 
         $this->db->transComplete();
@@ -127,6 +158,40 @@ class VistoriasService
             // adiciona novos itens
             foreach ($itens_vistoriados as $item) {
                 $item['id_vistoria'] = $id;
+
+
+                if(!empty($item['situacao_encontrada'])){
+
+
+                    if ($item['situacao_encontrada'] == 'Defeito') {
+
+                        $condominio = $this->condominios->buscarPorId($registro['id_condominio']);
+                        $item_condominio = $this->itensParaVistoria->buscarPorId($item['id_item_condominio']);
+                        $vistoria = $this->model->buscarPorId($id);
+                        $dataVistoriaBrasileira = date('d/m/Y', strtotime($vistoria['created_at']));
+                    
+                        enviarEmailSimples(
+                            "borsatole@gmail.com",
+                            "{$condominio['nome']}: {$item_condominio['nome_item']} precisa ser corrigido",
+                            "A vistoria realizada no dia {$dataVistoriaBrasileira} 
+                            detectou o seguinte item que precisa ser corrigido: {$item_condominio['nome_item']}"
+                        );
+                        
+                    }
+                    
+                    
+
+                     $this->itensParaVistoria->atualizar(
+                        $item['id_item_condominio'],
+                        [
+                            'situacao' => $item['situacao_encontrada'] ?? "",
+                            'ultima_vistoria' => date('Y-m-d H:i:s'),
+                        ]
+                    );
+                }
+               
+                
+
 
                 if (!$this->itensVistoriados->criar($item)) {
                     $this->db->transRollback();
