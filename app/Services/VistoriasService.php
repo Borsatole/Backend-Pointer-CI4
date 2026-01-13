@@ -19,7 +19,7 @@ class VistoriasService
     private ItensVistoriados $itensVistoriados;
     private CondominiosModel $condominios;
     private $db;
-    
+
 
     public function __construct()
     {
@@ -99,19 +99,19 @@ class VistoriasService
 
             if ($dadosItem['situacao_encontrada']) {
                 $this->itensParaVistoria->atualizar(
-                $item['id'],
-                [
-                    'situacao' => $dadosItem['situacao_encontrada'],
-                    'ultima_vistoria' => date('Y-m-d H:i:s'),
-                ]
-            );
+                    $item['id'],
+                    [
+                        'situacao' => $dadosItem['situacao_encontrada'],
+                        'ultima_vistoria' => date('Y-m-d H:i:s'),
+                    ]
+                );
             }
 
-            
 
-            
 
-            
+
+
+
             $this->itensVistoriados->criar($dadosItem);
         }
 
@@ -160,28 +160,28 @@ class VistoriasService
                 $item['id_vistoria'] = $id;
 
 
-                if(!empty($item['situacao_encontrada'])){
+                if (!empty($item['situacao_encontrada'])) {
 
 
-                    if ($item['situacao_encontrada'] == 'Defeito') {
+                    // 
 
-                        $condominio = $this->condominios->buscarPorId($registro['id_condominio']);
-                        $item_condominio = $this->itensParaVistoria->buscarPorId($item['id_item_condominio']);
-                        $vistoria = $this->model->buscarPorId($id);
-                        $dataVistoriaBrasileira = date('d/m/Y', strtotime($vistoria['created_at']));
-                    
-                        enviarEmailSimples(
-                            "borsatole@gmail.com",
-                            "{$condominio['nome']}: {$item_condominio['nome_item']} precisa ser corrigido",
-                            "A vistoria realizada no dia {$dataVistoriaBrasileira} 
-                            detectou o seguinte item que precisa ser corrigido: {$item_condominio['nome_item']}"
-                        );
-                        
-                    }
-                    
-                    
+                    //     $condominio = $this->condominios->buscarPorId($registro['id_condominio']);
+                    //     $item_condominio = $this->itensParaVistoria->buscarPorId($item['id_item_condominio']);
+                    //     $vistoria = $this->model->buscarPorId($id);
+                    //     $dataVistoriaBrasileira = date('d/m/Y', strtotime($vistoria['created_at']));
 
-                     $this->itensParaVistoria->atualizar(
+                    //     enviarEmailSimples(
+                    //         "borsatole@gmail.com",
+                    //         "{$condominio['nome']}: {$item_condominio['nome_item']} precisa ser corrigido",
+                    //         "A vistoria realizada no dia {$dataVistoriaBrasileira} 
+                    //         detectou o seguinte item que precisa ser corrigido: {$item_condominio['nome_item']}"
+                    //     );
+
+                    // }
+
+
+
+                    $this->itensParaVistoria->atualizar(
                         $item['id_item_condominio'],
                         [
                             'situacao' => $item['situacao_encontrada'] ?? "",
@@ -189,8 +189,8 @@ class VistoriasService
                         ]
                     );
                 }
-               
-                
+
+
 
 
                 if (!$this->itensVistoriados->criar($item)) {

@@ -57,16 +57,6 @@ class VistoriasModel extends Model
     protected $beforeDelete = [];
     protected $afterDelete = [];
 
-    // public function buscaComNome()
-    // {
-    //     $this->builder()
-    //         ->select('vistorias.*, condominios.nome AS condominio_nome, usuarios.nome AS responsavel_nome')
-    //         ->join('usuarios', 'usuarios.id = vistorias.responsavel', 'left')
-    //         ->join('condominios', 'condominios.id = vistorias.id_condominio', 'left');
-
-    //     return $this;
-    // }
-
 
     public function buscaVistoriaPeloId(int $id): self
     {

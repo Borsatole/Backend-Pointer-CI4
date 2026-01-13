@@ -278,3 +278,42 @@ $routes->group('itensvistoriados', ['filter' => 'autenticacao'], function ($rout
         ['filter' => 'permission:papeis.excluir']
     );
 });
+
+// Rotas de Chamados
+$routes->group('chamados', ['filter' => 'autenticacao'], function ($routes) {
+    $routes->get(
+        '',
+        'ChamadosController::index',
+        ['filter' => 'permission:papeis.visualizar']
+    );
+
+    $routes->post(
+        '',
+        'ChamadosController::create',
+        ['filter' => 'permission:papeis.criar']
+    );
+
+    $routes->get(
+        '(:num)',
+        'ChamadosController::show/$1',
+        ['filter' => 'permission:papeis.visualizar']
+    );
+
+    $routes->put(
+        '(:num)',
+        'ChamadosController::update/$1',
+        ['filter' => 'permission:papeis.editar']
+    );
+
+    $routes->delete(
+        '(:num)',
+        'ChamadosController::delete/$1',
+        ['filter' => 'permission:papeis.excluir']
+    );
+
+    $routes->delete(
+        'deleteimagem/(:num)',
+        'ChamadosController::deleteImagem/$1',
+        ['filter' => 'permission:papeis.excluir']
+    );
+});
